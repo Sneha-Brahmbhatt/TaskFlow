@@ -1,0 +1,51 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0F172A;
+
+    color:white;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* Container */
+
+.container{
+
+    text-align:center;
+
+}
+
+.container h1{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+}
+
+.container p{
+
+    color:#94A3B8;
+
+    font-size:1.2rem;
+
+}
