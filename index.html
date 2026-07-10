@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>TaskFlow Pro</title>
-
-    <link
-        rel="stylesheet"
-        href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Main Container -->
-    <div class="container">
+<nav>
 
-        <h1>TaskFlow Pro</h1>
+    <h2><i class="fa-solid fa-list-check"></i> TaskFlow</h2>
 
-        <p>Your Personal Productivity Companion</p>
+    <button id="themeBtn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
 
+</nav>
+
+<section class="hero">
+
+    <h1>Organize Your Day</h1>
+
+    <p>
+        A beautiful productivity app to manage your daily tasks efficiently.
+    </p>
+
+</section>
+
+<section class="dashboard">
+
+    <div class="card">
+        <h3>Total Tasks</h3>
+        <span id="totalTasks">0</span>
     </div>
 
-    <script src="script.js"></script>
+    <div class="card">
+        <h3>Completed</h3>
+        <span id="completedTasks">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Pending</h3>
+        <span id="pendingTasks">0</span>
+    </div>
+
+</section>
+
+<section class="addTask">
+
+    <input
+    type="text"
+    id="taskInput"
+    placeholder="Enter your task">
+
+    <button id="addBtn">
+
+        <i class="fa-solid fa-plus"></i>
+
+        Add Task
+
+    </button>
+
+</section>
+
+<section class="taskList">
+
+    <h2>Your Tasks</h2>
+
+    <ul id="taskContainer">
+
+    </ul>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>

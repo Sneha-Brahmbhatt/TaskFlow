@@ -1,51 +1,116 @@
-/* Reset */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
-
-/* Body */
 
 body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:#0F172A;
-
-    color:white;
-
+    background:linear-gradient(135deg,#4f46e5,#9333ea);
     min-height:100vh;
+    color:white;
+}
 
+nav{
     display:flex;
-
-    justify-content:center;
-
+    justify-content:space-between;
     align-items:center;
-
+    padding:25px 8%;
 }
 
-/* Container */
+nav h2{
+    font-size:30px;
+}
 
-.container{
+nav button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
 
+.hero{
     text-align:center;
-
+    margin-top:40px;
 }
 
-.container h1{
-
-    font-size:3rem;
-
-    margin-bottom:15px;
-
+.hero h1{
+    font-size:48px;
 }
 
-.container p{
+.hero p{
+    margin-top:15px;
+    opacity:.9;
+}
 
-    color:#94A3B8;
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:50px 8%;
+}
 
-    font-size:1.2rem;
+.card{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    transition:.3s;
+}
 
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card span{
+    display:block;
+    margin-top:10px;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.addTask{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.addTask input{
+    width:420px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+}
+
+.addTask button{
+    padding:15px 25px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:white;
+    color:#4f46e5;
+    font-weight:bold;
+}
+
+.taskList{
+    width:80%;
+    margin:40px auto;
+    background:white;
+    color:#222;
+    border-radius:20px;
+    padding:30px;
+}
+
+.taskList h2{
+    margin-bottom:20px;
+}
+
+#taskContainer{
+    list-style:none;
 }
